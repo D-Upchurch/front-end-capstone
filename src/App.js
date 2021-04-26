@@ -16,7 +16,7 @@ export const App = () => (
       if (sessionStorage.getItem(userStorageKey)) {
         return (
           <>
-            {/* <NavBar /> */}
+            <NavBar />
             <div className="applicationView">
             <ApplicationViews />
             </div>

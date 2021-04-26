@@ -1,0 +1,52 @@
+h1 {
+    font-family: 'Roboto', sans-serif;}
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar{
+    background-color: #D90404;
+    color: #FBEFDD;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+    padding: 0px;
+}
+
+.nav-link{
+    color: #FBEFDD; 
+}
+
+.nav-link:hover{
+    color: #AE4722; 
+}
+
+.nav-link:active{
+    color: #AE4722; 
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #AE4722;
+    color: #FBEFDD
+  }
+
+.footer{
+    background-color: #D90404;
+    color: #FBEFDD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:50px;
+    width:100%;
+    margin-top: 20px;
+    clear: all;
+}
