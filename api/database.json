@@ -7,5 +7,15 @@
     }
   ],
   "characters": [],
+  "characterSkills": [],
+  "skills": [],
+  "characterThrows": [
+      {
+          "id": 1,
+          "characterId": 1,
+          "throwId": 1,
+      }
+  ],
+  "savingThrows": [],
   "spellList": []
 }

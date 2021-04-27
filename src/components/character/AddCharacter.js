@@ -23,8 +23,8 @@ export const CharacterForm = () => {
         intelligence: "",
         wisdom: "",
         charisma: "",
-        skills: [],
-        savingThrows: []
+        skills: ,
+        savingThrows: 
     });
 
     const history = useHistory();
