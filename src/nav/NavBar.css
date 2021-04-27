@@ -5,29 +5,40 @@ body {
     font-family: sans-serif;
 }
 
-.navbar{
+.navbar {
     background-color: #D90404;
     color: #FBEFDD;
-    height: 100px;
-    margin-top: 20px;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
 }
 
-.logo{
+.logo {
     width: 90px;
     height: 90px;
     padding: 0px;
 }
 
+.navList {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
 .nav-link{
-    color: #FBEFDD; 
+    color: #FFFFFF;
+    height: 100%;
+    padding: 3em; 
 }
 
 .nav-link:hover{
-    color: #AE4722; 
+    color: #444444; 
 }
 
 .nav-link:active{
-    color: #AE4722; 
+    coloR: #444444; 
     font-weight: bold;
 }
 

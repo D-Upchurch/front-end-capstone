@@ -12,24 +12,23 @@ export const NavBar = () => {
     }
 
     return (
+
         <nav className="navbar">
-            <div>
-                <img className="logo" src={logo} alt="logo" />
-                <ul className="nav nav-pills nav-fill">
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/characters">Characters</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/spells">Spell List</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/dice">Dice Roller</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" onClick={handleLogout} to="/Login"> Logout </Link>
-                    </li>
-                </ul>
-            </div>
+            <img className="logo" src={logo} alt="logo" />
+            <ul className="navList">
+                <li className="nav-item">
+                    <Link className="nav-link" to="/characters">Characters</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/spells">Spell List</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to="/dice">Dice Roller</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" onClick={handleLogout} to="/Login"> Logout </Link>
+                </li>
+            </ul>
         </nav>
     )
 }
