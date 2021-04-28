@@ -41,6 +41,40 @@ export const deleteCharacter = (characterId) => {
     }).then(response => response.json())
 };
 
+//! This function will get all skills.
+export const getSkills = () => {
+    return fetch(`${remoteURL}/skills`)
+    .then(response => response.json())
+};
+
+//! This function will get all saving throws.
+export const getThrows = () => {
+    return fetch(`${remoteURL}/throws`)
+    .then(response => response.json())
+};
+
+//! This function will join a skill to a character.
+export const addSkill = (skill) => {
+    return fetch(`${remoteURL}/characterSkills`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(skill)
+    }).then(response => response.json())
+};
+
+//! This function will join a saving throw to a character.
+export const addThrow = (newThrow) => {
+    return fetch(`${remoteURL}/characterThrows`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newThrow)
+    }).then(response => response.json())
+};
+
 //! This function will get a skill by it's name.
 export const getSkillByName = (name) => {
     return fetch(`${remoteURL}/skills?name=${name}`)
