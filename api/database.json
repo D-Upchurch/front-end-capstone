@@ -12,7 +12,8 @@
         }
     ],
     "characters": [
-        {
+        {   
+            "id": 1,
             "userId": 1,
             "name": "Vellios",
             "level": 5,
@@ -31,12 +32,13 @@
             "charisma": 18
         },
         {
+            "id": 2,
             "userId": 2,
             "name": "Nova",
             "level": 5,
             "race": "Half-Elf",
             "class": "Rouge",
-            "alignment": "Lawful Good",
+            "alignment": "Chaotic Good",
             "experience": 13736,
             "hitPoints": 36,
             "armorClass": 19,
@@ -222,7 +224,7 @@
             "throwId": 4
         }
     ],
-    "savingThrows": [
+    "throws": [
         {
             "id": 1,
             "name": "Strength"
@@ -248,5 +250,5 @@
             "name": "Charisma"
         }
     ],
-    "spellList": []
+    "spells": []
 }
