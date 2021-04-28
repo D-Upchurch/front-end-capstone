@@ -1,7 +1,9 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 import { CharacterPage } from './components/character/CharacterPage'
-import { AddCharacter } from './components/character/AddCharacter'
+import { CharacterForm } from './components/character/AddCharacter'
+import { CharacterSkills } from './components/character/AddCharacterSkills'
+import { CharacterThrows } from './components/character/AddCharacterThrows'
 import { EditCharacter } from './components/character/EditCharacter'
 import { SpellList } from './components/SpellList'
 import { DiceRoller } from './components/DiceRoller'
@@ -11,19 +13,25 @@ export const ApplicationViews = () => {
     return (
         <>
             <Route exact path="/characters">
-                <CharacterPage />
+                {/* <CharacterPage /> */}
             </Route>
             <Route path="/characters/add">
-                <AddCharacter />
+                <CharacterForm />
+            </Route>
+            <Route path="/characters/skills">
+                <CharacterSkills />
+            </Route>
+            <Route path="/characters/throws">
+                {/* <CharacterThrows /> */}
             </Route>
             <Route path="/characters/:characterId(\d+)/edit">
-                <EditCharacter />
+                {/* <EditCharacter /> */}
             </Route>
             <Route path="/spells">
-                <SpellList />
+                {/* <SpellList /> */}
             </Route>
             <Route path="/dice">
-                <DiceRoller />
+                {/* <DiceRoller /> */}
             </Route>
         </>
     )

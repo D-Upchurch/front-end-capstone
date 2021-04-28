@@ -41,3 +41,26 @@ export const deleteCharacter = (characterId) => {
     }).then(response => response.json())
 };
 
+//! This function will get a skill by it's name.
+export const getSkillByName = (name) => {
+    return fetch(`${remoteURL}/skills?name=${name}`)
+    .then(response => response.json())
+}
+
+//! This function will get a skill by it's id.
+export const getSkillById = (id) => {
+    return fetch(`${remoteURL}/skills?id=${id}`)
+    .then(response => response.json())
+}
+
+//! This function will get a saving throw by it's name.
+export const getThrowByName = (name) => {
+    return fetch(`${remoteURL}/throws?name=${name}`)
+    .then(response => response.json())
+}
+
+//! This function will get a saving throw by it's id.
+export const getThrowById = (id) => {
+    return fetch(`${remoteURL}/throws?id=${id}`)
+    .then(response => response.json())
+}
