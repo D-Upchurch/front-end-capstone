@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom'
 import { addCharacter } from '../DataManager/CharacterManager'
-import { userStorageKey } from './components/auth/authSettings'
+import { userStorageKey } from '../auth/authSettings'
 
 export const CharacterForm = () => {
     const [isLoading, setIsLoading] = useState(false)
@@ -23,8 +23,6 @@ export const CharacterForm = () => {
         intelligence: "",
         wisdom: "",
         charisma: "",
-        skillId: "",
-        throwId: ""
     });
 
     const history = useHistory();
@@ -43,7 +41,7 @@ export const CharacterForm = () => {
         event.preventDefault()
         setIsLoading(true)
         addCharacter(character)
-            .then(() => history.push("/characters"))
+            .then(() => history.push("/characters/skills"))
     };
 
     return (
@@ -52,97 +50,97 @@ export const CharacterForm = () => {
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="name">Name:</label>
-                    <input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Character name" value={character.name} />
+                    <input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="" value={character.name} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="level">Level:</label>
-                    <input type="text" id="level" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Level" value={character.level} />
+                    <input type="number" maxLength="2" min="1" max="20" id="level" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.level} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="race">Race:</label>
-                    <input type="text" id="race" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Race" value={character.race} />
+                    <input type="text" id="race" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="" value={character.race} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="class">Class:</label>
-                    <input type="text" id="class" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Class" value={character.class} />
+                    <input type="" id="class" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="" value={character.class} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="alignment">Alignment:</label>
-                    <input type="text" id="alignment" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Alignment" value={character.alignment} />
+                    <input type="text" id="alignment" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="" value={character.alignment} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="experience">Experience:</label>
-                    <input type="text" id="experience" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Experience" value={character.experience} />
+                    <input type="number" id="experience" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="0" value={character.experience} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="hitPoints">Hit Points:</label>
-                    <input type="text" id="hitPoints" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Hit Points" value={character.hitPoints} />
+                    <input type="number" maxLength="3" min="0" max="300" id="hitPoints" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.hitPoints} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="armorClass">Armor Class:</label>
-                    <input type="text" id="armorClass" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Armor Class" value={character.armorClass} />
+                    <input type="number" maxLength="2" min="0" max="30" id="armorClass" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.armorClass} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="proficiencyBonus">Proficiency Bonus:</label>
-                    <input type="text" id="proficiencyBonus" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Proficiency Bonus" value={character.proficiencyBonus} />
+                    <input type="number" maxLength="2" min="0" max="20" id="proficiencyBonus" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.proficiencyBonus} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="strength">Strength:</label>
-                    <input type="text" id="strength" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Strength" value={character.strength} />
+                    <input type="number" maxLength="2" min="0" max="20" id="strength" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.strength} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="dexterity">Dexterity:</label>
-                    <input type="text" id="dexterity" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Dexterity" value={character.dexterity} />
+                    <input type="number" maxLength="2" min="0" max="20" id="dexterity" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.dexterity} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="constitution">Constitution:</label>
-                    <input type="text" id="constitution" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Constitution" value={character.constitution} />
+                    <input type="number" maxLength="2" min="0" max="20" id="constitution" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.constitution} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="intelligence">Intelligence:</label>
-                    <input type="text" id="intelligence" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Intelligence" value={character.intelligence} />
+                    <input type="number" maxLength="2" min="0" max="20"id="intelligence" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.intelligence} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="wisdom">Wisdom:</label>
-                    <input type="text" id="wisdom" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Wisdom" value={character.wisdom} />
+                    <input type="number" maxLength="2" min="0" max="20" id="wisdom" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.wisdom} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="charisma">Charisma:</label>
-                    <input type="text" id="charisma" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Charisma" value={character.charisma} />
+                    <input type="number" maxLength="2" min="0" max="20" id="charisma" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.charisma} />
                 </div>
             </fieldset>
             <button className="button"
                 onClick={handleClickSaveCharacter}
                 disabled={isLoading}>
-                Save Character
+                Save Character And Add Skills
             </button>
         </form>
     )
