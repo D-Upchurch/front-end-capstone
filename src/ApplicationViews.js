@@ -13,7 +13,7 @@ export const ApplicationViews = () => {
     return (
         <>
             <Route exact path="/characters">
-                {/* <CharacterPage /> */}
+                <CharacterPage />
             </Route>
             <Route path="/characters/add">
                 <CharacterForm />
@@ -22,7 +22,7 @@ export const ApplicationViews = () => {
                 <CharacterSkills />
             </Route>
             <Route path="/characters/throws">
-                {/* <CharacterThrows /> */}
+                <CharacterThrows />
             </Route>
             <Route path="/characters/:characterId(\d+)/edit">
                 {/* <EditCharacter /> */}

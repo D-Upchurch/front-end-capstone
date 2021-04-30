@@ -1,0 +1,9 @@
+.skillForm-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
