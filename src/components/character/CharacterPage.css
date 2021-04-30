@@ -1,0 +1,55 @@
+.CharacterSheet {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.CharacterHeader {
+    margin: 1em;
+}
+
+.CharacterSubHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.subHeaderItem {
+    margin: 0em 1em 0em 1em;
+}
+
+.CharacterStats {
+    display: flex;
+    border-style: dotted;
+    border-color: #444444;
+    margin: 1em;
+}
+
+.characterSkills {
+    border-style: dotted;
+    border-color: #444444;
+    margin: 1em;
+}
+
+.characterThrows {
+    border-style: dotted;
+    border-color: #444444;
+    margin: 1em;
+}
+
+
+.CharacterStat {
+    text-align: center;
+    padding: 1em;
+    border-style: solid;
+    border-color: #D90404;
+    margin: 0.5em;
+    max-height: 12em;
+}
+
+.centerStat {
+    text-align: center;
+    border-style: solid;
+    padding: 1em;
+    
+}
