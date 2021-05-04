@@ -66,13 +66,23 @@ export const addSkill = (skill) => {
 
 //! This function will join a saving throw to a character.
 export const addThrow = (newThrow) => {
-    return fetch(`${remoteURL}/characterThrows`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(newThrow)
-    }).then(response => response.json())
+    getCharacterThrows(`${newThrow.characterId}`)
+    .then(response => { 
+        console.log(response.length)
+        if(response.length === 2) {
+            return alert("Your character can only be proficient in 2 Saving Throws")
+        }
+        else if (response.length < 2) {
+            return fetch(`${remoteURL}/characterThrows`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(newThrow)
+            }).then(response => response.json())
+        }
+    }
+    )
 };
 
 //! This function will get a skill by it's name.

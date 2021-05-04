@@ -14,8 +14,8 @@
   "characters": [
     {
       "id": 1,
-      "userId": 1,
       "name": "Vellios",
+      "userId": 1,
       "level": 5,
       "race": "Half-Elf",
       "class": "Sorcerer",
@@ -24,7 +24,7 @@
       "hitPoints": 37,
       "armorClass": 14,
       "proficiencyBonus": 3,
-      "strength": 8,
+      "strength": "9",
       "dexterity": 10,
       "constitution": 15,
       "intelligence": 12,
@@ -67,7 +67,7 @@
       "constitution": 14,
       "intelligence": 8,
       "wisdom": 15,
-      "charisma": "12"
+      "charisma": "13"
     },
     {
       "id": 4,
@@ -77,8 +77,8 @@
       "race": "Elf",
       "class": "Ranger",
       "alignment": "Lawful Neutral",
-      "experience": 13739,
-      "hitPoints": 51,
+      "experience": "13741",
+      "hitPoints": "49",
       "armorClass": 16,
       "proficiencyBonus": 3,
       "strength": 15,
@@ -108,42 +108,42 @@
       "id": 5
     },
     {
+      "id": 6,
       "name": "Hagrid",
       "userId": 1,
-      "level": 4,
+      "level": "5",
       "race": "Dog",
       "class": "Paladin",
       "alignment": "Neutral Good",
-      "experience": 9001,
+      "experience": "13555",
       "hitPoints": 80,
       "armorClass": 16,
-      "proficiencyBonus": 2,
+      "proficiencyBonus": "3",
       "strength": 19,
       "dexterity": 17,
       "constitution": 15,
       "intelligence": 13,
       "wisdom": 12,
-      "charisma": 11,
-      "id": 6
+      "charisma": 11
     },
     {
-      "name": "Gronk",
+      "id": 7,
+      "name": "Bob",
       "userId": 1,
-      "level": "5",
+      "level": "2",
       "race": "Human",
       "class": "Fighter",
-      "alignment": "Lawful Good",
-      "experience": "13455",
-      "hitPoints": "55",
-      "armorClass": "15",
+      "alignment": "Good",
+      "experience": "556",
+      "hitPoints": "25",
+      "armorClass": "12",
       "proficiencyBonus": "3",
-      "strength": "17",
-      "dexterity": "16",
-      "constitution": "15",
-      "intelligence": "14",
-      "wisdom": "13",
-      "charisma": "12",
-      "id": 7
+      "strength": "12",
+      "dexterity": "11",
+      "constitution": "12",
+      "intelligence": "13",
+      "wisdom": "15",
+      "charisma": "16"
     }
   ],
   "characterSkills": [
@@ -274,13 +274,18 @@
     },
     {
       "characterId": 7,
-      "skillId": 17,
+      "skillId": 3,
       "id": 27
     },
     {
       "characterId": 7,
-      "skillId": 18,
+      "skillId": 4,
       "id": 28
+    },
+    {
+      "characterId": 7,
+      "skillId": 5,
+      "id": 29
     }
   ],
   "skills": [
@@ -410,8 +415,13 @@
     },
     {
       "characterId": 7,
-      "throwId": 2,
+      "throwId": 6,
       "id": 13
+    },
+    {
+      "characterId": 7,
+      "throwId": 5,
+      "id": 14
     }
   ],
   "throws": [

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { getCharactersByUserId, addThrow, getThrows } from '../DataManager/CharacterManager';
+import { getCharactersByUserId, addThrow, getThrows} from '../DataManager/CharacterManager';
 import { userStorageKey } from '../auth/authSettings';
 
 export const CharacterThrows = () => {
-    const [isLoading, setIsLoading] = useState(false)
-    const [characters, setCharacters] = useState([])
-    const [throws, setThrows] = useState([])
+    const [isLoading, setIsLoading] = useState(false);
+    const [characters, setCharacters] = useState([]);
+    const [throws, setThrows] = useState([]);
+  
     const [SavingThrow, setSavingThrow] = useState({
         characterId: "",
         throwId: ""
@@ -14,8 +15,16 @@ export const CharacterThrows = () => {
 
     const characterArr = () => {getCharactersByUserId(parseInt(sessionStorage.getItem(userStorageKey))).then(Response => {setCharacters(Response)})};
 
-    const throwsArr = () => {getThrows().then(Response => {setThrows(Response)})}
+    const throwsArr = () => {getThrows().then(Response => {setThrows(Response)})};
+
+    // const characterThrowsArr = (id) => {getCharacterThrows(id).then(Response => {
+    //     setCharacterThrows(Response)
+    // })};
     
+    // useEffect(() => {
+    //     characterThrowsArr(`${SavingThrow.characterId}`)
+    // }, [SavingThrow])
+
     useEffect(() => {
         throwsArr()
     }, [])
@@ -37,6 +46,12 @@ export const CharacterThrows = () => {
          return dropdownArr;
     }
 
+    // const characterThrowsDropdown = (array) => {
+    //     const dropdownArr = array.map(obj => {return <option key={obj.id} id={"characterThrows__" + obj.id} value={obj.id}>{obj.name}</option>})
+
+    //     console.log(dropdownArr)
+    //     return dropdownArr;
+    // }
 
     const history = useHistory();
 
@@ -58,7 +73,6 @@ export const CharacterThrows = () => {
         event.preventDefault()
         setIsLoading(true)
         addThrow(SavingThrow)
-            .then(() => alert(`Saving Throw added to character!`))
     };
 
     const handleClickNextPage = (event) => {
@@ -88,10 +102,17 @@ export const CharacterThrows = () => {
                     </select>
                 </div>
             </fieldset>
+            {/* <fieldset>
+                <div className="form-group">
+                    <label htmlFor="characterThrows">Selected Character's Saving Throws</label>
+                    <select id="characterThrows" name="characterThrows" size="3" onChange={handleControlledInputChange}>
+                        {characterThrowsDropdown(characterThrows)}
+                    </select>
+                </div>
+            </fieldset> */}
             <button id="addThrow" className="button" onClick={handleClickSaveThrow}>Add Throw</button>
             <button id="characterPage" className="button" onClick={handleClickNextPage}>Back to Character Page</button>
         </form>
     )
 }
 
-//! I will need a conditional that will allow a character to only have 2 saving throws joined to them.
