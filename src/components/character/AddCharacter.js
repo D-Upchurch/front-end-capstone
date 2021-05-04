@@ -9,20 +9,20 @@ export const CharacterForm = () => {
     const [character, setCharacter] = useState({
         name: "",
         userId: parseInt(sessionStorage.getItem(userStorageKey)),
-        level: "",
+        level: 0,
         race: "",
         class: "",
         alignment: "",
-        experience: "",
-        hitPoints: "",
-        armorClass: "",
-        proficiencyBonus: "",
-        strength: "",
-        dexterity: "",
-        constitution: "",
-        intelligence: "",
-        wisdom: "",
-        charisma: "",
+        experience: 0,
+        hitPoints: 0,
+        armorClass: 0,
+        proficiencyBonus: 0,
+        strength: 0,
+        dexterity: 0,
+        constitution: 0,
+        intelligence: 0,
+        wisdom: 0,
+        charisma: 0,
     });
 
     const history = useHistory();
@@ -68,7 +68,7 @@ export const CharacterForm = () => {
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="class">Class:</label>
-                    <input type="" id="class" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="" value={character.class} />
+                    <input type="text" id="class" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="" value={character.class} />
                 </div>
             </fieldset>
             <fieldset>

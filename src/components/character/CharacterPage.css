@@ -1,7 +1,6 @@
 .CharacterSheet {
     display: flex;
     flex-direction: row;
-    
 }
 
 .CharacterHeader {
