@@ -3,7 +3,7 @@ import { editCharacter, getCharacterById } from '../DataManager/CharacterManager
 import { useParams, useHistory } from 'react-router-dom';
 
 export const EditCharacter = () => {
-    const [character, setCharacter] = useState([]);
+    const [character, setCharacter] = useState({});
     const [isLoading, setIsLoading] = useState(false);
 
     const { characterId } = useParams();

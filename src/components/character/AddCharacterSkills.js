@@ -86,13 +86,13 @@ export const CharacterSkills = () => {
                         </select>
                     </div>
                 </fieldset>
-                <fieldset>
+                {/* <fieldset>
                     <div className="form-group">
                         <label htmlFor="characterSkills">Character's Skills:</label>
                         
                         
                     </div>
-                </fieldset>
+                </fieldset> */}
             </div>
             <button id="addSkill" className="button" disabled={isLoading} onClick={handleClickSaveSkill}>Add Skill</button>
             <button id="nextPage" className="button" onClick={handleClickNextPage}>Click here to add saving Throws!</button>
