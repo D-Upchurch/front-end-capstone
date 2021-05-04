@@ -98,3 +98,15 @@ export const getThrowById = (id) => {
     return fetch(`${remoteURL}/throws?id=${id}`)
     .then(response => response.json())
 }
+
+//! This function will return an array that contains the skills of a given character.
+export const getCharacterSkills = (id) => {
+    return fetch(`${remoteURL}/characterSkills?characterId=${id}&_expand=skill`)
+    .then(response => response.json())
+}
+
+//! This function will return an array that contains the saving throws of a given character.
+export const getCharacterThrows = (id) => {
+    return fetch(`${remoteURL}/characterThrows?characterId=${id}&_expand=throw`)
+    .then(response => response.json())
+}

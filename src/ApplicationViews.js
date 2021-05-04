@@ -5,7 +5,7 @@ import { CharacterForm } from './components/character/AddCharacter'
 import { CharacterSkills } from './components/character/AddCharacterSkills'
 import { CharacterThrows } from './components/character/AddCharacterThrows'
 import { EditCharacter } from './components/character/EditCharacter'
-import { SpellList } from './components/SpellList'
+import { SpellList } from './components/spell/SpellList'
 import { DiceRoller } from './components/DiceRoller'
 
 
@@ -25,7 +25,7 @@ export const ApplicationViews = () => {
                 <CharacterThrows />
             </Route>
             <Route path="/characters/:characterId(\d+)/edit">
-                {/* <EditCharacter /> */}
+                <EditCharacter />
             </Route>
             <Route path="/spells">
                 {/* <SpellList /> */}

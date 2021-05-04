@@ -51,80 +51,99 @@
       "charisma": 13
     },
     {
+      "id": 3,
       "name": "Yohan",
       "userId": 1,
-      "level": "5",
+      "level": 5,
       "race": "Dwarf",
       "class": "Cleric",
       "alignment": "Lawful Good",
-      "experience": "13739",
-      "hitPoints": "50",
-      "armorClass": "19",
-      "proficiencyBonus": "3",
-      "strength": "15",
-      "dexterity": "10",
-      "constitution": "14",
-      "intelligence": "8",
-      "wisdom": "15",
-      "charisma": "12",
-      "id": 3
+      "experience": 13739,
+      "hitPoints": 50,
+      "armorClass": 19,
+      "proficiencyBonus": 3,
+      "strength": 15,
+      "dexterity": 10,
+      "constitution": 14,
+      "intelligence": 8,
+      "wisdom": 15,
+      "charisma": "12"
     },
     {
+      "id": 4,
       "name": "Bribbs",
       "userId": 1,
-      "level": "5",
+      "level": 5,
       "race": "Elf",
       "class": "Ranger",
       "alignment": "Lawful Neutral",
-      "experience": "13739",
-      "hitPoints": "51",
-      "armorClass": "16",
-      "proficiencyBonus": "3",
-      "strength": "15",
-      "dexterity": "12",
-      "constitution": "10",
-      "intelligence": "10",
-      "wisdom": "10",
-      "charisma": "10",
-      "id": 4
+      "experience": 13739,
+      "hitPoints": 51,
+      "armorClass": 16,
+      "proficiencyBonus": 3,
+      "strength": 15,
+      "dexterity": 12,
+      "constitution": 10,
+      "intelligence": 10,
+      "wisdom": 20,
+      "charisma": 10
     },
     {
       "name": "Dave",
       "userId": 1,
-      "level": "3",
+      "level": 3,
       "race": "Human",
       "class": "Barbarian",
       "alignment": "Chaotic Good",
-      "experience": "6500",
-      "hitPoints": "35",
-      "armorClass": "15",
-      "proficiencyBonus": "1",
-      "strength": "18",
-      "dexterity": "10",
-      "constitution": "15",
-      "intelligence": "8",
-      "wisdom": "10",
-      "charisma": "14",
+      "experience": 6500,
+      "hitPoints": 35,
+      "armorClass": 15,
+      "proficiencyBonus": 1,
+      "strength": 18,
+      "dexterity": 10,
+      "constitution": 15,
+      "intelligence": 8,
+      "wisdom": 10,
+      "charisma": 14,
       "id": 5
     },
     {
       "name": "Hagrid",
       "userId": 1,
-      "level": "4",
+      "level": 4,
       "race": "Dog",
       "class": "Paladin",
       "alignment": "Neutral Good",
-      "experience": "9001",
-      "hitPoints": "80",
-      "armorClass": "16",
-      "proficiencyBonus": "2",
-      "strength": "19",
-      "dexterity": "17",
-      "constitution": "15",
-      "intelligence": "13",
-      "wisdom": "12",
-      "charisma": "11",
+      "experience": 9001,
+      "hitPoints": 80,
+      "armorClass": 16,
+      "proficiencyBonus": 2,
+      "strength": 19,
+      "dexterity": 17,
+      "constitution": 15,
+      "intelligence": 13,
+      "wisdom": 12,
+      "charisma": 11,
       "id": 6
+    },
+    {
+      "name": "Gronk",
+      "userId": 1,
+      "level": "5",
+      "race": "Human",
+      "class": "Fighter",
+      "alignment": "Lawful Good",
+      "experience": "13455",
+      "hitPoints": "55",
+      "armorClass": "15",
+      "proficiencyBonus": "3",
+      "strength": "17",
+      "dexterity": "16",
+      "constitution": "15",
+      "intelligence": "14",
+      "wisdom": "13",
+      "charisma": "12",
+      "id": 7
     }
   ],
   "characterSkills": [
@@ -204,11 +223,6 @@
       "skillId": 17
     },
     {
-      "characterId": 1,
-      "skillId": 2,
-      "id": 16
-    },
-    {
       "characterId": 3,
       "skillId": 4,
       "id": 17
@@ -237,6 +251,36 @@
       "characterId": 6,
       "skillId": 4,
       "id": 22
+    },
+    {
+      "characterId": 3,
+      "skillId": 15,
+      "id": 23
+    },
+    {
+      "characterId": 3,
+      "skillId": 6,
+      "id": 24
+    },
+    {
+      "characterId": 7,
+      "skillId": 1,
+      "id": 25
+    },
+    {
+      "characterId": 7,
+      "skillId": 2,
+      "id": 26
+    },
+    {
+      "characterId": 7,
+      "skillId": 17,
+      "id": 27
+    },
+    {
+      "characterId": 7,
+      "skillId": 18,
+      "id": 28
     }
   ],
   "skills": [
@@ -345,16 +389,6 @@
       "id": 6
     },
     {
-      "characterId": 4,
-      "throwId": 3,
-      "id": 7
-    },
-    {
-      "characterId": 1,
-      "throwId": 2,
-      "id": 8
-    },
-    {
       "characterId": 3,
       "throwId": 1,
       "id": 9
@@ -368,6 +402,16 @@
       "characterId": 6,
       "throwId": 6,
       "id": 11
+    },
+    {
+      "characterId": 3,
+      "throwId": 3,
+      "id": 12
+    },
+    {
+      "characterId": 7,
+      "throwId": 2,
+      "id": 13
     }
   ],
   "throws": [

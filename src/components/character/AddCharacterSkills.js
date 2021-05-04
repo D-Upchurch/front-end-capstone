@@ -55,8 +55,10 @@ export const CharacterSkills = () => {
         event.preventDefault()
         setIsLoading(true)
         addSkill(skill)
-            .then(() => alert(`Skill added to character!`))
-    };
+            .then(() => {
+                alert(`Skill added to character!`)
+                setIsLoading(false);
+    })};
 
     const handleClickNextPage = (event) => {
         event.preventDefault()
@@ -92,7 +94,7 @@ export const CharacterSkills = () => {
                     </div>
                 </fieldset>
             </div>
-            <button id="addSkill" className="button" onClick={handleClickSaveSkill}>Add Skill</button>
+            <button id="addSkill" className="button" disabled={isLoading} onClick={handleClickSaveSkill}>Add Skill</button>
             <button id="nextPage" className="button" onClick={handleClickNextPage}>Click here to add saving Throws!</button>
 
         </form>
