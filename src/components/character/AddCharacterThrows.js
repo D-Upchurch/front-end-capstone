@@ -17,13 +17,6 @@ export const CharacterThrows = () => {
 
     const throwsArr = () => {getThrows().then(Response => {setThrows(Response)})};
 
-    // const characterThrowsArr = (id) => {getCharacterThrows(id).then(Response => {
-    //     setCharacterThrows(Response)
-    // })};
-    
-    // useEffect(() => {
-    //     characterThrowsArr(`${SavingThrow.characterId}`)
-    // }, [SavingThrow])
 
     useEffect(() => {
         throwsArr()
@@ -46,12 +39,6 @@ export const CharacterThrows = () => {
          return dropdownArr;
     }
 
-    // const characterThrowsDropdown = (array) => {
-    //     const dropdownArr = array.map(obj => {return <option key={obj.id} id={"characterThrows__" + obj.id} value={obj.id}>{obj.name}</option>})
-
-    //     console.log(dropdownArr)
-    //     return dropdownArr;
-    // }
 
     const history = useHistory();
 
@@ -64,9 +51,6 @@ export const CharacterThrows = () => {
         newThrow[event.target.id] = selectedVal
         setSavingThrow(newThrow)
     };
-
-
-    //? For the save button for throw, I need to set a conditional so that if a character already has 2 saving throws joined to it, they will not be able to add another and will get an alert informing them they can only have 2.
 
 
     const handleClickSaveThrow = (event) => {

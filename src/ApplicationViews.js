@@ -28,7 +28,7 @@ export const ApplicationViews = () => {
                 <EditCharacter />
             </Route>
             <Route path="/spells">
-                {/* <SpellList /> */}
+                <SpellList />
             </Route>
             <Route path="/dice">
                 {/* <DiceRoller /> */}

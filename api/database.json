@@ -67,7 +67,7 @@
       "constitution": 14,
       "intelligence": 8,
       "wisdom": 15,
-      "charisma": "13"
+      "charisma": 11
     },
     {
       "id": 4,
@@ -77,8 +77,8 @@
       "race": "Elf",
       "class": "Ranger",
       "alignment": "Lawful Neutral",
-      "experience": "13741",
-      "hitPoints": "49",
+      "experience": 13743,
+      "hitPoints": 50,
       "armorClass": 16,
       "proficiencyBonus": 3,
       "strength": 15,
@@ -111,14 +111,14 @@
       "id": 6,
       "name": "Hagrid",
       "userId": 1,
-      "level": "5",
+      "level": 6,
       "race": "Dog",
       "class": "Paladin",
       "alignment": "Neutral Good",
-      "experience": "13555",
+      "experience": 13552,
       "hitPoints": 80,
       "armorClass": 16,
-      "proficiencyBonus": "3",
+      "proficiencyBonus": 4,
       "strength": 19,
       "dexterity": 17,
       "constitution": 15,
@@ -128,22 +128,79 @@
     },
     {
       "id": 7,
-      "name": "Bob",
+      "name": "Slogg",
       "userId": 1,
-      "level": "2",
+      "level": 6,
+      "race": "Orc",
+      "class": "Cleric",
+      "alignment": "Lawful Good",
+      "experience": 2400,
+      "hitPoints": 56,
+      "armorClass": 16,
+      "proficiencyBonus": 4,
+      "strength": 16,
+      "dexterity": 15,
+      "constitution": 17,
+      "intelligence": 16,
+      "wisdom": 15,
+      "charisma": 14
+    },
+    {
+      "name": "Roger",
+      "userId": 1,
+      "level": 5,
+      "race": "Human",
+      "class": "Cleric",
+      "alignment": "Lawful Good",
+      "experience": 15000,
+      "hitPoints": 25,
+      "armorClass": 15,
+      "proficiencyBonus": 3,
+      "strength": 15,
+      "dexterity": 15,
+      "constitution": 15,
+      "intelligence": 15,
+      "wisdom": 15,
+      "charisma": 15,
+      "id": 8
+    },
+    {
+      "name": "John",
+      "userId": 1,
+      "level": 5,
+      "race": "Human",
+      "class": "Fighter",
+      "alignment": "Lawful Good",
+      "experience": 13555,
+      "hitPoints": 25,
+      "armorClass": 16,
+      "proficiencyBonus": 3,
+      "strength": 15,
+      "dexterity": 15,
+      "constitution": 15,
+      "intelligence": 15,
+      "wisdom": 15,
+      "charisma": 15,
+      "id": 9
+    },
+    {
+      "name": "Test",
+      "userId": 1,
+      "level": 5,
       "race": "Human",
       "class": "Fighter",
       "alignment": "Good",
-      "experience": "556",
-      "hitPoints": "25",
-      "armorClass": "12",
-      "proficiencyBonus": "3",
-      "strength": "12",
-      "dexterity": "11",
-      "constitution": "12",
-      "intelligence": "13",
-      "wisdom": "15",
-      "charisma": "16"
+      "experience": 15333,
+      "hitPoints": 15,
+      "armorClass": 15,
+      "proficiencyBonus": 3,
+      "strength": 15,
+      "dexterity": 15,
+      "constitution": 15,
+      "intelligence": 15,
+      "wisdom": 15,
+      "charisma": 15,
+      "id": 10
     }
   ],
   "characterSkills": [
@@ -264,28 +321,33 @@
     },
     {
       "characterId": 7,
-      "skillId": 1,
+      "skillId": 3,
       "id": 25
     },
     {
       "characterId": 7,
-      "skillId": 2,
+      "skillId": 4,
       "id": 26
     },
     {
       "characterId": 7,
-      "skillId": 3,
+      "skillId": 17,
       "id": 27
     },
     {
       "characterId": 7,
-      "skillId": 4,
+      "skillId": 1,
       "id": 28
     },
     {
       "characterId": 7,
-      "skillId": 5,
+      "skillId": 2,
       "id": 29
+    },
+    {
+      "characterId": 7,
+      "skillId": 3,
+      "id": 30
     }
   ],
   "skills": [
@@ -415,12 +477,12 @@
     },
     {
       "characterId": 7,
-      "throwId": 6,
+      "throwId": 5,
       "id": 13
     },
     {
       "characterId": 7,
-      "throwId": 5,
+      "throwId": 4,
       "id": 14
     }
   ],
