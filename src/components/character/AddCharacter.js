@@ -30,7 +30,7 @@ export const CharacterForm = () => {
     const handleControlledInputChange = (event) => {
         const newCharacter = { ...character }
         let selectedVal = event.target.value
-        if (event.target.id.includes("Id")) {
+        if (event.target.id.includes("level, experience, hitPoints, armorClass, proficiencyBonus, strength, dexterity, constitution, intelligence, wisdom, charisma")) {
             selectedVal = parseInt(selectedVal)
         }
         newCharacter[event.target.id] = selectedVal
@@ -80,61 +80,61 @@ export const CharacterForm = () => {
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="experience">Experience:</label>
-                    <input type="number" id="experience" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="0" value={character.experience} />
+                    <input type="number" id="experience" onChange={handleControlledInputChange} required autoFocus className="form-control" value={character.experience} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="hitPoints">Hit Points:</label>
-                    <input type="number" maxLength="3" min="0" max="300" id="hitPoints" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.hitPoints} />
+                    <input type="number" maxLength="3" min="0" max="300" id="hitPoints" onChange={handleControlledInputChange} required autoFocus className="form-control" value={character.hitPoints} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="armorClass">Armor Class:</label>
-                    <input type="number" maxLength="2" min="0" max="30" id="armorClass" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.armorClass} />
+                    <input type="number" maxLength="2" min="0" max="30" id="armorClass" onChange={handleControlledInputChange} required autoFocus className="form-control" value={character.armorClass} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="proficiencyBonus">Proficiency Bonus:</label>
-                    <input type="number" maxLength="2" min="0" max="20" id="proficiencyBonus" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.proficiencyBonus} />
+                    <input type="number" maxLength="2" min="0" max="20" id="proficiencyBonus" onChange={handleControlledInputChange} required autoFocus className="form-control" value={character.proficiencyBonus} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="strength">Strength:</label>
-                    <input type="number" maxLength="2" min="0" max="20" id="strength" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.strength} />
+                    <input type="number" maxLength="2" min="0" max="20" id="strength" onChange={handleControlledInputChange} required autoFocus className="form-control" value={character.strength} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="dexterity">Dexterity:</label>
-                    <input type="number" maxLength="2" min="0" max="20" id="dexterity" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.dexterity} />
+                    <input type="number" maxLength="2" min="0" max="20" id="dexterity" onChange={handleControlledInputChange} required autoFocus className="form-control" value={character.dexterity} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="constitution">Constitution:</label>
-                    <input type="number" maxLength="2" min="0" max="20" id="constitution" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.constitution} />
+                    <input type="number" maxLength="2" min="0" max="20" id="constitution" onChange={handleControlledInputChange} required autoFocus className="form-control" value={character.constitution} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="intelligence">Intelligence:</label>
-                    <input type="number" maxLength="2" min="0" max="20"id="intelligence" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.intelligence} />
+                    <input type="number" maxLength="2" min="0" max="20"id="intelligence" onChange={handleControlledInputChange} required autoFocus className="form-control" value={character.intelligence} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="wisdom">Wisdom:</label>
-                    <input type="number" maxLength="2" min="0" max="20" id="wisdom" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.wisdom} />
+                    <input type="number" maxLength="2" min="0" max="20" id="wisdom" onChange={handleControlledInputChange} required autoFocus className="form-control" value={character.wisdom} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="charisma">Charisma:</label>
-                    <input type="number" maxLength="2" min="0" max="20" id="charisma" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="1" value={character.charisma} />
+                    <input type="number" maxLength="2" min="0" max="20" id="charisma" onChange={handleControlledInputChange} required autoFocus className="form-control" value={character.charisma} />
                 </div>
             </fieldset>
             <button className="button"

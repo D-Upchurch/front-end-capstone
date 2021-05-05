@@ -13,8 +13,11 @@ export const EditCharacter = () => {
         const stateToChange = { ...character };
         let editedVal = event.target.value;
 
-        if (event.target.id.includes("Id")) {
-            editedVal = parseInt(editedVal);
+        if (event.target.id.includes("name", "race", "class", "alignment")) {
+            editedVal = editedVal
+        }
+        else {
+            editedVal = parseInt(editedVal)
         }
 
         stateToChange[event.target.id] = editedVal;

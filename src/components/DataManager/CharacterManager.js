@@ -19,7 +19,24 @@ export const addCharacter = (newCharacter) => {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(newCharacter)
+        body: JSON.stringify({
+            name: newCharacter.name,
+            userId: newCharacter.userId,
+            level: parseInt(newCharacter.level),
+            race: newCharacter.race,
+            class: newCharacter.class,
+            alignment: newCharacter.alignment,
+            experience: parseInt(newCharacter.experience),
+            hitPoints: parseInt(newCharacter.hitPoints),
+            armorClass: parseInt(newCharacter.armorClass),
+            proficiencyBonus: parseInt(newCharacter.proficiencyBonus),
+            strength: parseInt(newCharacter.strength),
+            dexterity: parseInt(newCharacter.dexterity),
+            constitution: parseInt(newCharacter.constitution),
+            intelligence: parseInt(newCharacter.intelligence),
+            wisdom: parseInt(newCharacter.wisdom),
+            charisma: parseInt(newCharacter.charisma)
+        })
     }).then(response => response.json())
 };
 
@@ -68,8 +85,8 @@ export const addSkill = (skill) => {
 export const addThrow = (newThrow) => {
     getCharacterThrows(`${newThrow.characterId}`)
     .then(response => { 
-        console.log(response.length)
-        if(response.length === 2) {
+        
+        if(response.length = 2) {
             return alert("Your character can only be proficient in 2 Saving Throws")
         }
         else if (response.length < 2) {
