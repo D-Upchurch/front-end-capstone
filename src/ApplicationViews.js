@@ -31,7 +31,7 @@ export const ApplicationViews = () => {
                 <SpellList />
             </Route>
             <Route path="/dice">
-                {/* <DiceRoller /> */}
+                <DiceRoller />
             </Route>
         </>
     )
