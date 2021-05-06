@@ -512,5 +512,138 @@
       "name": "Charisma"
     }
   ],
-  "spells": []
+  "spells": [
+    {
+      "userId": 1,
+      "name": "Scorching Ray",
+      "school": "Evocation",
+      "level": "2nd-level",
+      "components": "V, S",
+      "class": "Cleric, Sorcerer, Warlock, Wizard",
+      "description": "You generate three rays of fire and will throw to targets in the range of the spell. You can project them on one or more targets. Perform a remote attack spell for each department. If it hits, the target takes 2d6 fire damage.",
+      "higherLevels": "When you cast this spell using a 3 or higher level spell slot, you generate an additional radius for each level of higher spell slot 2.",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "name": "Lightning Bolt",
+      "school": "Evocation",
+      "level": "3rd-level",
+      "components": "V, S, M",
+      "class": "Druid, Sorcerer, Wizard",
+      "description": "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one. The lightning ignites flammable objects in the area that aren't being worn or carried.",
+      "higherLevels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "name": "Misty Step",
+      "school": "Conjuration",
+      "level": "2nd-level",
+      "components": "V",
+      "class": "Druid, Paladin, Sorcerer, Warlock, Wizard",
+      "description": "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.",
+      "higherLevels": "",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "name": "Shield",
+      "school": "Abjuration",
+      "level": "1st-level",
+      "components": "V, S",
+      "class": "Sorcerer, Wizard",
+      "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
+      "higherLevels": "",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "name": "Disguise Self",
+      "school": "Illusion",
+      "level": "1st-level",
+      "components": "V, S",
+      "class": "Bard, Cleric, Sorcerer, Wizard",
+      "description": "You make yourself - including your clothing, armor, weapons, and other belongings on your person - look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you. The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair. To discern that you are disguised, a creature can use its action to inspect your apperance and must succeed on an Intelligence (Investigation) check against your spell save DC.",
+      "higherLevels": "",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "name": "Lesser Restoration",
+      "school": "Abjuration",
+      "level": "2nd-level",
+      "components": "V, S",
+      "class": "Bard, Cleric, Druid, Paladin, Ranger",
+      "description": "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.",
+      "higherLevels": "",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "name": "Shocking Grasp",
+      "school": "Evocation",
+      "level": "Cantrip",
+      "components": "V, S",
+      "class": "Sorcerer, Wizard",
+      "description": "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can't take reactions until the start of its next turn. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "higherLevels": "",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "name": "Ray of Frost",
+      "school": "Evocation",
+      "level": "Cantrip",
+      "components": "V, S",
+      "class": "Sorcerer, Wizard",
+      "description": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "higherLevels": "",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "name": "Chill Touch",
+      "school": "Necromancy",
+      "level": "Cantrip",
+      "components": "V, S",
+      "class": "Sorcerer, Warlock, Wizard",
+      "description": "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target. If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn. This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+      "higherLevels": "",
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "name": "Fire Bolt",
+      "school": "Evocation",
+      "level": "Cantrip",
+      "components": "V, S",
+      "class": "Sorcerer, Wizard",
+      "description": "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried. This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+      "higherLevels": "",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "name": "Magic Missile",
+      "school": "Evocation",
+      "level": "1st-level",
+      "components": "V, S",
+      "class": "Sorcerer, Wizard",
+      "description": "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.",
+      "higherLevels": "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "name": "Faerie Fire",
+      "school": "Evocation",
+      "level": "1st-level",
+      "components": "V",
+      "class": "Bard, Cleric, Druid, Warlock",
+      "description": "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.",
+      "higherLevels": "",
+      "id": 13
+    }
+  ]
 }

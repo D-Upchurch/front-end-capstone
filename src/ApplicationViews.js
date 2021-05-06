@@ -7,6 +7,7 @@ import { CharacterThrows } from './components/character/AddCharacterThrows'
 import { EditCharacter } from './components/character/EditCharacter'
 import { SpellList } from './components/spell/SpellList'
 import { DiceRoller } from './components/DiceRoller'
+import { AddSpell } from './components/spell/AddSpell'
 
 
 export const ApplicationViews = () => {
@@ -27,8 +28,11 @@ export const ApplicationViews = () => {
             <Route path="/characters/:characterId(\d+)/edit">
                 <EditCharacter />
             </Route>
-            <Route path="/spells">
+            <Route exact path="/spells">
                 <SpellList />
+            </Route>
+            <Route path="/spells/add">
+                <AddSpell />
             </Route>
             <Route path="/dice">
                 <DiceRoller />

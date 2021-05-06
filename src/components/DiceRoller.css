@@ -36,7 +36,7 @@
     border-style: dotted;
     display: flex;
     justify-content: center;
-    background-color: #444444;
+    background-color: #BCBEC2;
     margin: 1em;
     width: 15em;
 }
@@ -45,4 +45,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #444444;
 }

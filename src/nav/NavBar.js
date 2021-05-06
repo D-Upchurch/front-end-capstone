@@ -20,7 +20,7 @@ export const NavBar = () => {
                     <Link className="nav-link" to="/characters">Characters</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/spells">Spell List</Link>
+                    <Link className="nav-link" to="/spells">Spell Book</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/dice">Dice Roller</Link>

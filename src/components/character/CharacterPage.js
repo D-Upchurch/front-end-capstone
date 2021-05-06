@@ -103,11 +103,11 @@ export const CharacterPage = () => {
                     </select>
                 </div>
                 <div>
-                    <button onClick={handleClickAddNewCharacter}>Add Character</button>
+                    <button className="button" onClick={handleClickAddNewCharacter}>Add Character</button>
                     <Link to={`/characters/${character.id}/edit`}>
-                        <button hidden={isLoading}>Edit Character</button>
+                        <button hidden={isLoading} className="button">Edit Character</button>
                     </Link>
-                    <button type="button" hidden={isLoading} onClick={() => handleDeleteCharacter(character.id)}>Delete Character</button>
+                    <button className="button" type="button" hidden={isLoading} onClick={() => handleDeleteCharacter(character.id)}>Delete Character</button>
                 </div>
             </div>
             <hr></hr>

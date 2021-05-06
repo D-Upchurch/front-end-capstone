@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { rollD4, rollD6, rollD8, rollD10, rollD12, rollD20 } from './DataManager/DiceManager'
+
 import './DiceRoller.css'
 
 export const DiceRoller = () => {

@@ -1,0 +1,16 @@
+.spellCard {
+    background-color: #FFFFFF;
+    max-width: 25%;
+    border-style: solid;
+    border-color: #444444;
+    border-width: 1em;
+    padding: 1em;
+    margin: 1em;
+    letter-spacing: 0.05em;
+}
+
+.spellBook {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
