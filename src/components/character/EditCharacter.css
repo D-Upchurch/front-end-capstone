@@ -1,0 +1,54 @@
+.characterForm {
+    background-color: #444444;
+    margin: 1em;
+    width: 75%;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+.editPageWrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #BCBEC2;
+}
+
+.characterForm__title { 
+    text-align: center;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-control {
+    width: 75%;
+    font-size: 0.8em;
+}
+
+.editCharacterButton {
+    box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size:1.5em;
+	font-weight:bold;
+    padding: 0.3em 0.5em;
+    width: 35%;
+    margin: 0.5em;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+
+.centerButton {
+    display: flex;
+    justify-content: center;
+}

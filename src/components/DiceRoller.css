@@ -7,15 +7,16 @@
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size:1.5em;
 	font-weight:bold;
-	padding:6px 24px;
+    padding: 0.5em 1.5em;
+    
 	text-decoration:none;
 	text-shadow:0px 1px 0px #b23e35;
 }
 .button:hover {
-	background:linear-gradient(to bottom, #ce0100 5%, #000000 100%);
+	background:linear-gradient(to bottom, #D90404 5%, #000000 100%);
 	background-color:#ce0100;
 }
 .button:active {
@@ -24,8 +25,9 @@
 }
 
 .buttonLayout {
-    border-style: dotted;
+    padding: 5em;
     display: flex;
+    width: 75%;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 1em;
@@ -33,17 +35,23 @@
 }
 
 .rollContainer {
-    border-style: dotted;
+    padding: 3em;
     display: flex;
     justify-content: center;
-    background-color: #BCBEC2;
+    background:linear-gradient(to bottom, #D90404 5%, #000000 100%);
     margin: 1em;
     width: 15em;
+    color: #FFFFFF;
+    font-family: 'Didact Gothic', sans-serif;
+    border-radius: 1em;
+    margin-bottom: 6em;
+    
 }
 
 .dicePage {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #444444;
+    background-color: #BCBEC2;
+    font-family: 'Didact Gothic', sans-serif;
 }

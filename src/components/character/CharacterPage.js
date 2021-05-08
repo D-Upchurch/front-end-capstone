@@ -93,25 +93,25 @@ export const CharacterPage = () => {
     }, []);
 
     return (
-        <div>
+        <div className="pageWrapper">
 
             <div className="characterControl">
                 <div className="characterSelection">
-                    <label htmlFor="character">Select Your Character:</label>
-                    <select id="characterId" name="characters" size="3" onChange={handleControlledInputChange} defaultValue="1">
+                    <label className="selectHeading" hidden={isLoading} htmlFor="character">Select Your Character:</label>
+                    <p className="noSelectedCharacter" hidden={!isLoading}>Select a character to view it's stats!</p>
+                    <select id="characterId" name="characters" size="5" onChange={handleControlledInputChange} defaultValue="1">
                         {characterDropdown(userCharacters)}
                     </select>
                 </div>
                 <div>
-                    <button className="button" onClick={handleClickAddNewCharacter}>Add Character</button>
+                    <button className="characterButton" onClick={handleClickAddNewCharacter}>Add Character</button>
                     <Link to={`/characters/${character.id}/edit`}>
-                        <button hidden={isLoading} className="button">Edit Character</button>
+                        <button disabled={isLoading} className="characterButton">Edit Character</button>
                     </Link>
-                    <button className="button" type="button" hidden={isLoading} onClick={() => handleDeleteCharacter(character.id)}>Delete Character</button>
+                    <button className="characterButton" type="button" disabled={isLoading} onClick={() => handleDeleteCharacter(character.id)}>Delete Character</button>
                 </div>
             </div>
-            <hr></hr>
-            <p className="noSelectedCharacter" hidden={!isLoading}>Select a character to view it's stats!</p>
+            
             <div className="CharacterInfo" hidden={isLoading}>
                 <div className="CharacterHeader">
                     <h2>{character.name}</h2>

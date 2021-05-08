@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import "./NavBar.css";
-import logo from '../images/dice-twenty-faces-twenty.png'
+import logo from '../images/d20-grey.png'
 
 export const NavBar = () => {
     const history = useHistory();
@@ -17,16 +17,16 @@ export const NavBar = () => {
             <img className="logo" src={logo} alt="logo" />
             <ul className="navList">
                 <li className="nav-item">
-                    <Link className="nav-link" to="/characters">Characters</Link>
+                    <NavLink activeClassName="selected" className="nav-link" to="/characters">Characters</NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/spells">Spell Book</Link>
+                    <NavLink activeClassName="selected" className="nav-link" to="/spells">Spell Book</NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/dice">Dice Roller</Link>
+                    <NavLink activeClassName="selected" className="nav-link" to="/dice">Dice Roller</NavLink>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" onClick={handleLogout} to="/Login"> Logout </Link>
+                    <NavLink activeClassName="selected" className="nav-link" onClick={handleLogout} to="/Login"> Logout </NavLink>
                 </li>
             </ul>
         </nav>

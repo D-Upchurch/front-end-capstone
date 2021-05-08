@@ -9,6 +9,11 @@
       "email": "ps@capstone.com",
       "name": "Preston Shotts",
       "id": 2
+    },
+    {
+      "email": "bl@capstone.com",
+      "name": "Brenda Long",
+      "id": 3
     }
   ],
   "characters": [
@@ -29,7 +34,7 @@
       "constitution": 15,
       "intelligence": 12,
       "wisdom": 13,
-      "charisma": 18
+      "charisma": 17
     },
     {
       "id": 2,
@@ -165,42 +170,23 @@
       "id": 8
     },
     {
-      "name": "John",
+      "name": "Noob",
       "userId": 1,
-      "level": 5,
-      "race": "Human",
-      "class": "Fighter",
+      "level": 1,
+      "race": "Elf",
+      "class": "Druid",
       "alignment": "Lawful Good",
-      "experience": 13555,
-      "hitPoints": 25,
-      "armorClass": 16,
-      "proficiencyBonus": 3,
-      "strength": 15,
-      "dexterity": 15,
-      "constitution": 15,
-      "intelligence": 15,
-      "wisdom": 15,
-      "charisma": 15,
-      "id": 9
-    },
-    {
-      "name": "Test",
-      "userId": 1,
-      "level": 5,
-      "race": "Human",
-      "class": "Fighter",
-      "alignment": "Good",
-      "experience": 15333,
-      "hitPoints": 15,
+      "experience": 15555,
+      "hitPoints": 55,
       "armorClass": 15,
-      "proficiencyBonus": 3,
-      "strength": 15,
-      "dexterity": 15,
-      "constitution": 15,
-      "intelligence": 15,
+      "proficiencyBonus": 1,
+      "strength": 12,
+      "dexterity": 14,
+      "constitution": 16,
+      "intelligence": 12,
       "wisdom": 15,
-      "charisma": 15,
-      "id": 10
+      "charisma": 10,
+      "id": 9
     }
   ],
   "characterSkills": [
@@ -644,6 +630,72 @@
       "description": "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.",
       "higherLevels": "",
       "id": 13
+    },
+    {
+      "userId": 2,
+      "name": "Bless",
+      "school": "Enchantment",
+      "level": "1st-level",
+      "components": "V, S, M",
+      "class": "Cleric, Paladin",
+      "description": "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.",
+      "higherLevels": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+      "id": 14
+    },
+    {
+      "userId": 2,
+      "name": "Disintegrate",
+      "school": "Transmutation",
+      "level": "6th-level",
+      "components": "V, S, M",
+      "class": "Sorcerer, Wizard",
+      "description": "A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by wall of force. A creature targeted by this spell must make a dexterity saving throw. On a failed save, the target takes 10d6 + 40 force damage. If this damage reduces the target to 0 hit points, it is disintegrated. A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell. This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. A magic item is unaffected by this spell.",
+      "higherLevels": "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 3d6 for each slot level above 6th.",
+      "id": 15
+    },
+    {
+      "userId": 2,
+      "name": "Fireball",
+      "school": "Evocation",
+      "level": "3rd-level",
+      "components": "V, S, M",
+      "class": "Cleric, Sorcerer, Warlock, Wizard",
+      "description": "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one. The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.",
+      "higherLevels": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "name": "Cure Wounds",
+      "school": "Evocation",
+      "level": "1st-level",
+      "components": "V, S",
+      "class": "Bard, Cleric, Druid, Paladin, Ranger",
+      "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+      "higherLevels": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.",
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "name": "Eldritch Blast",
+      "school": "Evocation",
+      "level": "Cantrip",
+      "components": "V, S",
+      "class": "Warlock",
+      "description": "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage. The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
+      "higherLevels": "",
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "name": "Spiritual Weapon",
+      "school": "Evocation",
+      "level": "2nd-level",
+      "components": "V, S",
+      "class": "Cleric",
+      "description": "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier. As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it. The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell's effect resemble that weapon.",
+      "higherLevels": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above the 2nd.",
+      "id": 19
     }
   ]
 }
