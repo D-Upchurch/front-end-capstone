@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { editCharacter, getCharacterById } from '../DataManager/CharacterManager';
 import { useParams, useHistory } from 'react-router-dom';
+import './EditCharacter.css'
 
 export const EditCharacter = () => {
     const [character, setCharacter] = useState({});
@@ -60,7 +61,7 @@ export const EditCharacter = () => {
     }, []);
 
     return (
-        <>
+        <div className="editPageWrapper">
             <form className="characterForm">
                 <h2 className="characterForm__title">Edit Character</h2>
                 <fieldset>
@@ -153,12 +154,14 @@ export const EditCharacter = () => {
                         <input type="number" maxLength="2" min="0" max="20" id="charisma" onChange={handleFieldChange} required autoFocus className="form-control" value={character.charisma} />
                     </div>
                 </fieldset>
-                <button className="button"
-                    onClick={updateCharacter}>
-                    Update Character
-            </button>
+                <div className="centerButton">
+                    <button className="editCharacterButton"
+                        onClick={updateCharacter}>
+                        Update Character
+                    </button>
+                </div>
             </form>
-        </>
+        </div>
     )
 
 }

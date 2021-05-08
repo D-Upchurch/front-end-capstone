@@ -7,3 +7,11 @@
     display: flex;
     flex-direction: column;
 }
+
+.skillPageWrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: #BCBEC2;
+    text-align: center;
+}

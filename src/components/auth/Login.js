@@ -41,14 +41,14 @@ export const Login = () => {
         <main className="container--login">
             <dialog className="dialog dialog--auth" open={existDialog}>
                 <div>User does not exist</div>
-                <button className="button--close" onClick={e => setExistDialog(false)}>Close</button>
+                <button className="button-login" onClick={e => setExistDialog(false)}>Close</button>
             </dialog>
-            <section>
+            <div>
                 <form className="form--login" onSubmit={handleLogin}>
                     <h1>Welcome to the Tavern!</h1>
-                    <h2>Please sign in</h2>
-                    <fieldset>
-                        <label htmlFor="inputEmail"> Email address </label>
+                    <h2>Please register or sign in:</h2>
+                    <div className="email-container">
+                        <label htmlFor="inputEmail"> Email:</label>
                         <input type="email"
                             id="email"
                             className="form-control"
@@ -56,17 +56,20 @@ export const Login = () => {
                             required autoFocus
                             value={loginUser.email}
                             onChange={handleInputChange} />
-                    </fieldset>
-                    <fieldset>
-                        <button type="submit">
+                    </div>
+                    <div className="button-container">
+                        <button className="button-login" type="submit">
                             Sign in
                         </button>
-                    </fieldset>
+                   
+                        <Link to="/register">
+                            <button className="button-login">
+                                Register
+                        </button></Link>
+                    </div>
                 </form>
-            </section>
-            <section className="link--register">
-                <Link to="/register">Register for an account</Link>
-            </section>
+            </div>
+
         </main>
     )
 }

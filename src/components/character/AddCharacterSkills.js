@@ -67,6 +67,7 @@ export const CharacterSkills = () => {
     }
 
     return (
+        <div className="skillPageWrapper">
         <form className="skillForm">
             <h2 className="skillForm__title">Select and add the skills your character is proficient in:</h2>
             <div className="skillForm-flex">
@@ -98,6 +99,7 @@ export const CharacterSkills = () => {
             <button id="nextPage" className="button" onClick={handleClickNextPage}>Click here to add saving Throws!</button>
 
         </form>
+        </div>
     )
 }
 

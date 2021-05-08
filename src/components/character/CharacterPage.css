@@ -1,16 +1,75 @@
+.body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
 .CharacterSheet {
     display: flex;
     flex-direction: row;
+    
 }
 
 .CharacterHeader {
     margin: 1em;
+    background-color: #444444;
+    color: #FFFFFF;
+    padding: 0.5em;
+}
+
+.characterControl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    
+}
+
+.CharacterInfo {
+    border-left: solid #444444 0.8em;
+}
+
+.characterButton {
+    box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size:1.5em;
+	font-weight:bold;
+    padding: 0.3em 0.5em;
+    width: 75%;
+    margin: 0.5em;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+
+.characterButton:hover {
+	background:linear-gradient(to bottom, #D90404 5%, #000000 100%);
+	background-color:#ce0100;
+}
+
+.characterSelection {
+    display: flex;
+    flex-direction: column;
 }
 
 .CharacterSubHeader {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #444444;
+    max-width: 100%;
+   
+    color: #FFFFFF;
+    padding: 0.8em 0.2em;
+    margin: 0.2em;
+    letter-spacing: 0.05em;
+    
 }
 
 .subHeaderItem {
@@ -19,36 +78,79 @@
 
 .CharacterStats {
     display: flex;
-    border-style: dotted;
-    border-color: #444444;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #444444;
+    color: #FFFFFF;
+    padding: 0.8em 0.2em;
     margin: 1em;
+    letter-spacing: 0.05em;
+    height: 35em;
+  
 }
 
 .characterSkills {
-    border-style: dotted;
-    border-color: #444444;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #444444;
+    color: #FFFFFF;
+    padding: 0.8em 0.8em;
     margin: 1em;
+    letter-spacing: 0.05em;
+    height: 75em;
+    width: 25%;
+   
 }
 
 .characterThrows {
-    border-style: dotted;
-    border-color: #444444;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #444444;
+    color: #FFFFFF;
+    padding: 0.8em 0.2em;
     margin: 1em;
+    letter-spacing: 0.05em;
+    height: 42em;
+   
 }
 
 
 .CharacterStat {
     text-align: center;
-    padding: 1em;
-    border-style: solid;
-    border-color: #D90404;
-    margin: 0.5em;
-    max-height: 12em;
+    padding: .5em;
+    border: solid 0.5em #D90404;
+    margin: 0.2em;
+    width: 22%;
+    font-size: 1.2em;
+    border-radius: 10%;
 }
 
 .centerStat {
     text-align: center;
-    border-style: solid;
-    padding: 1em;
     
+    padding: 0.5em;
+    
+}
+
+.selectHeading {
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+.skillsDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skillsDisplay p {
+    margin: 0em 0.5em;
 }
