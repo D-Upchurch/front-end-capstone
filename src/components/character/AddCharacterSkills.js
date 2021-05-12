@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { getCharactersByUserId, addSkill, getSkills } from '../DataManager/CharacterManager';
+import { getCharactersByUserId, addSkill, getSkills, getCharacterSkills, deleteSkill } from '../DataManager/CharacterManager';
 import { userStorageKey } from '../auth/authSettings';
 import "./CharacterSkills.css"
 
 export const CharacterSkills = () => {
     const [isLoading, setIsLoading] = useState(false)
+    const [characterSkills, setCharacterSkills] = useState([])
     const [characters, setCharacters] = useState([])
     const [skills, setSkills] = useState([])
     const [skill, setSkill] = useState({
@@ -17,6 +18,8 @@ export const CharacterSkills = () => {
 
     const skillsArr = () => { getSkills().then(Response => { setSkills(Response) }) }
 
+    const characterSkillsArr = () => { getCharacterSkills(skill.characterId).then(Response => { setCharacterSkills(Response)})};
+
     useEffect(() => {
         skillsArr()
     }, [])
@@ -24,6 +27,10 @@ export const CharacterSkills = () => {
     useEffect(() => {
         characterArr()
     }, [])
+
+    useEffect(() => {
+        characterSkillsArr()
+    }, [skill])
 
     const characterDropdown = (array) => {
         const dropdownArr = array.map(obj => { return <option key={obj.id} id={"characters__" + obj.id} value={obj.id} >{obj.name}</option> })
@@ -38,6 +45,12 @@ export const CharacterSkills = () => {
         return dropdownArr;
     }
 
+    const characterSkillsDropdown = (array) => {
+        const dropdownArr = array.map(obj => { return <option key={obj.id} id={"characterSkills__" + obj.id} value={obj.id}>{obj.skill.name}</option>})
+
+        return dropdownArr;
+    }
+
 
     const history = useHistory();
 
@@ -48,6 +61,7 @@ export const CharacterSkills = () => {
             selectedVal = parseInt(selectedVal)
         }
         newSkill[event.target.id] = selectedVal
+        console.log(newSkill)
         setSkill(newSkill)
     };
 
@@ -56,6 +70,7 @@ export const CharacterSkills = () => {
         setIsLoading(true)
         addSkill(skill)
             .then(() => {
+                characterSkillsArr()
                 alert(`Skill added to character!`)
                 setIsLoading(false);
     })};
@@ -66,6 +81,14 @@ export const CharacterSkills = () => {
         history.push("/characters/throws")
     }
 
+    const handleDeleteSkill = (event) => {
+        event.preventDefault()
+        
+        console.log(skill.characterSkillId, "pre delete skill id")
+        deleteSkill(skill.characterSkillId)
+        .then(() => {characterSkillsArr()})
+    }
+
     return (
         <div className="skillPageWrapper">
         <form className="skillForm">
@@ -74,7 +97,7 @@ export const CharacterSkills = () => {
                 <fieldset>
                     <div className="form-group">
                         <label htmlFor="character">Character:</label>
-                        <select id="characterId" name="characters" size="3" onChange={handleControlledInputChange}>
+                        <select id="characterId" name="characters" size="5" onChange={handleControlledInputChange}>
                             {characterDropdown(characters)}
                         </select>
                     </div>
@@ -87,16 +110,19 @@ export const CharacterSkills = () => {
                         </select>
                     </div>
                 </fieldset>
-                {/* <fieldset>
+                <fieldset>
                     <div className="form-group">
                         <label htmlFor="characterSkills">Character's Skills:</label>
-                        
+                        <select id="characterSkillId" name="characterSkills" size="5" onChange={handleControlledInputChange}>
+                            {characterSkillsDropdown(characterSkills)}
+                        </select>
                         
                     </div>
-                </fieldset> */}
+                </fieldset>
             </div>
             <button id="addSkill" className="button" disabled={isLoading} onClick={handleClickSaveSkill}>Add Skill</button>
             <button id="nextPage" className="button" onClick={handleClickNextPage}>Click here to add saving Throws!</button>
+            <button id="deleteSkill" className="button" disabled={isLoading} onClick={handleDeleteSkill}>Delete Skill</button>
 
         </form>
         </div>

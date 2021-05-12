@@ -58,6 +58,7 @@ export const deleteCharacter = (characterId) => {
     }).then(response => response.json())
 };
 
+
 //! This function will get all skills.
 export const getSkills = () => {
     return fetch(`${remoteURL}/skills`)
@@ -136,4 +137,11 @@ export const getCharacterSkills = (id) => {
 export const getCharacterThrows = (id) => {
     return fetch(`${remoteURL}/characterThrows?characterId=${id}&_expand=throw`)
     .then(response => response.json())
+}
+
+//! This function will delete a skill from a character.
+export const deleteSkill = (id) => {
+    return fetch(`${remoteURL}/characterSkills/${id}`, {
+        method: "DELETE"
+    }).then(response => response.json())
 }
