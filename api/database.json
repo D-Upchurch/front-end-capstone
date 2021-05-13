@@ -316,6 +316,65 @@
       "skillId": 18,
       "characterSkillId": 30,
       "id": 30
+    },
+    {
+      "characterId": 8,
+      "skillId": 17,
+      "characterSkillId": 31,
+      "id": 31
+    },
+    {
+      "characterId": 8,
+      "skillId": 18,
+      "characterSkillId": 31,
+      "id": 32
+    },
+    {
+      "characterId": 8,
+      "skillId": 4,
+      "characterSkillId": 31,
+      "id": 33
+    },
+    {
+      "characterId": 8,
+      "skillId": 3,
+      "characterSkillId": 31,
+      "id": 34
+    },
+    {
+      "characterId": 8,
+      "skillId": 14,
+      "characterSkillId": 35,
+      "id": 35
+    },
+    {
+      "characterId": 6,
+      "skillId": 11,
+      "id": 36
+    },
+    {
+      "characterId": 5,
+      "skillId": 15,
+      "characterSkillId": 37,
+      "id": 37
+    },
+    {
+      "characterId": 5,
+      "skillId": 14,
+      "characterSkillId": 37,
+      "id": 38
+    },
+    {
+      "characterId": 4,
+      "skillId": 5,
+      "characterSkillId": 37,
+      "id": 39
+    },
+    {
+      "characterId": 4,
+      "skillId": 6,
+      "characterSkillId": 37,
+      "id": 40
     }
   ],
   "skills": [
