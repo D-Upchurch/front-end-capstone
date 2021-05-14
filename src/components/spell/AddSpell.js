@@ -22,7 +22,7 @@ export const AddSpell = () => {
     const handleControlledInputChange = (event) => {
         const newSpell = { ...addedSpell }
         let selectedVal = event.target.value
-        console.log(selectedVal)
+    
         getSpellBySlug(selectedVal)
             .then(res => { res.results.map(obj => { setAddedSpell(obj) }) })
     }

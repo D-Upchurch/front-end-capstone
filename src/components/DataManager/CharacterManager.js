@@ -84,24 +84,15 @@ export const addSkill = (skill) => {
 
 //! This function will join a saving throw to a character.
 export const addThrow = (newThrow) => {
-    getCharacterThrows(`${newThrow.characterId}`)
-    .then(response => { 
-        
-        if(response.length = 2) {
-            return alert("Your character can only be proficient in 2 Saving Throws")
-        }
-        else if (response.length < 2) {
-            return fetch(`${remoteURL}/characterThrows`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(newThrow)
-            }).then(response => response.json())
-        }
-    }
-    )
-};
+    return fetch(`${remoteURL}/characterThrows`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newThrow)
+    }).then(response => response.json())
+;}
+   
 
 //! This function will get a skill by it's name.
 export const getSkillByName = (name) => {
@@ -142,6 +133,13 @@ export const getCharacterThrows = (id) => {
 //! This function will delete a skill from a character.
 export const deleteSkill = (id) => {
     return fetch(`${remoteURL}/characterSkills/${id}`, {
+        method: "DELETE"
+    }).then(response => response.json())
+}
+
+//! This function will delete a saving throw from a character.
+export const deleteThrow = (id) => {
+    return fetch(`${remoteURL}/characterThrows/${id}`, {
         method: "DELETE"
     }).then(response => response.json())
 }

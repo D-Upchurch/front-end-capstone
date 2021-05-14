@@ -29,7 +29,7 @@
       "hitPoints": 37,
       "armorClass": 14,
       "proficiencyBonus": 3,
-      "strength": "9",
+      "strength": 8,
       "dexterity": 10,
       "constitution": 15,
       "intelligence": 12,
@@ -493,11 +493,6 @@
       "id": 10
     },
     {
-      "characterId": 6,
-      "throwId": 6,
-      "id": 11
-    },
-    {
       "characterId": 3,
       "throwId": 3,
       "id": 12
@@ -508,9 +503,37 @@
       "id": 13
     },
     {
+      "characterId": 8,
+      "throwId": 1,
+      "id": 14
+    },
+    {
       "characterId": 7,
       "throwId": 4,
-      "id": 14
+      "characterThrows": "16",
+      "id": 16
+    },
+    {
+      "characterId": 5,
+      "throwId": 2,
+      "id": 17
+    },
+    {
+      "characterId": 5,
+      "throwId": 3,
+      "id": 18
+    },
+    {
+      "characterId": 6,
+      "throwId": 6,
+      "characterThrows": "11",
+      "id": 19
+    },
+    {
+      "characterId": 8,
+      "throwId": 5,
+      "characterThrows": "20",
+      "id": 20
     }
   ],
   "throws": [

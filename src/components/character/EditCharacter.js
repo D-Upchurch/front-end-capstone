@@ -14,7 +14,7 @@ export const EditCharacter = () => {
         const stateToChange = { ...character };
         let editedVal = event.target.value;
 
-        console.log(event.target.id)
+       
 
         if (event.target.id.includes("name")) {
             editedVal = editedVal
@@ -29,7 +29,7 @@ export const EditCharacter = () => {
             editedVal = editedVal
         }
         else {
-            console.log(event.target.value, "inside else")
+           
             editedVal = parseInt(editedVal)
         }
 

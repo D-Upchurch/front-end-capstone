@@ -61,7 +61,6 @@ export const CharacterSkills = () => {
             selectedVal = parseInt(selectedVal)
         }
         newSkill[event.target.id] = selectedVal
-        console.log(newSkill)
         setSkill(newSkill)
     };
 
@@ -71,7 +70,6 @@ export const CharacterSkills = () => {
         addSkill(skill)
             .then(() => {
                 characterSkillsArr()
-                alert(`Skill added to character!`)
                 setIsLoading(false);
             })
     };
@@ -84,8 +82,6 @@ export const CharacterSkills = () => {
 
     const handleDeleteSkill = (event) => {
         event.preventDefault()
-
-        console.log(skill.characterSkillId, "pre delete skill id")
         deleteSkill(skill.characterSkillId)
             .then(() => { characterSkillsArr() })
     }
@@ -94,7 +90,7 @@ export const CharacterSkills = () => {
         <>
             <div className="skillPageWrapper">
 
-                <h2 className="skillForm__title">Select and add the skills your character is proficient in:</h2>
+                <h2>Select a character to add a skill to:</h2>
                 <div className="skillForm-flex">
 
                     <div className="form-group">
@@ -104,7 +100,7 @@ export const CharacterSkills = () => {
                         </select>
                     </div>
                 </div>
-
+                <h2>Select a skill to add:</h2>
                 <div className="skillForm-flex">
                     <div className="form-group">
                         <h3>Skills:</h3>
@@ -115,7 +111,7 @@ export const CharacterSkills = () => {
                 </div>
 
                 <button id="addSkill" className="button" disabled={isLoading} onClick={handleClickSaveSkill}>Add Skill</button>
-
+                <h2>Delete a skill from selected character:</h2>
                 <div className="skillForm-flex">
                     <div className="form-group">
                         <h3>Selected Character's Skills:</h3>
