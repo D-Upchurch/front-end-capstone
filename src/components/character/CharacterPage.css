@@ -13,6 +13,7 @@
     background-color: #444444;
     color: #FFFFFF;
     padding: 0.5em;
+    border-radius: 1em;
 }
 
 .characterControl {
@@ -64,12 +65,11 @@
     justify-content: space-evenly;
     background-color: #444444;
     max-width: 100%;
-   
     color: #FFFFFF;
     padding: 0.8em 0.2em;
     margin: 0.2em;
     letter-spacing: 0.05em;
-    
+    border-radius: 1em;
 }
 
 .subHeaderItem {
@@ -88,6 +88,7 @@
     margin: 1em;
     letter-spacing: 0.05em;
     height: 35em;
+    border-radius: 1em;
   
 }
 
@@ -104,6 +105,7 @@
     letter-spacing: 0.05em;
     height: 75em;
     width: 25%;
+    border-radius: 1em;
    
 }
 
@@ -119,6 +121,7 @@
     margin: 1em;
     letter-spacing: 0.05em;
     height: 42em;
+    border-radius: 1em;
    
 }
 

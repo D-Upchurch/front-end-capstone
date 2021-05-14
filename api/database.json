@@ -29,7 +29,7 @@
       "hitPoints": 37,
       "armorClass": 14,
       "proficiencyBonus": 3,
-      "strength": "9",
+      "strength": 8,
       "dexterity": 10,
       "constitution": 15,
       "intelligence": 12,
@@ -151,6 +151,7 @@
       "charisma": 14
     },
     {
+      "id": 8,
       "name": "Roger",
       "userId": 1,
       "level": 5,
@@ -166,27 +167,7 @@
       "constitution": 15,
       "intelligence": 15,
       "wisdom": 15,
-      "charisma": 15,
-      "id": 8
-    },
-    {
-      "name": "Noob",
-      "userId": 1,
-      "level": 1,
-      "race": "Elf",
-      "class": "Druid",
-      "alignment": "Lawful Good",
-      "experience": 15555,
-      "hitPoints": 55,
-      "armorClass": 15,
-      "proficiencyBonus": 1,
-      "strength": 12,
-      "dexterity": 14,
-      "constitution": 16,
-      "intelligence": 12,
-      "wisdom": 15,
-      "charisma": 10,
-      "id": 9
+      "charisma": 15
     }
   ],
   "characterSkills": [
@@ -332,8 +313,68 @@
     },
     {
       "characterId": 7,
-      "skillId": 3,
+      "skillId": 18,
+      "characterSkillId": 30,
       "id": 30
+    },
+    {
+      "characterId": 8,
+      "skillId": 17,
+      "characterSkillId": 31,
+      "id": 31
+    },
+    {
+      "characterId": 8,
+      "skillId": 18,
+      "characterSkillId": 31,
+      "id": 32
+    },
+    {
+      "characterId": 8,
+      "skillId": 4,
+      "characterSkillId": 31,
+      "id": 33
+    },
+    {
+      "characterId": 8,
+      "skillId": 3,
+      "characterSkillId": 31,
+      "id": 34
+    },
+    {
+      "characterId": 8,
+      "skillId": 14,
+      "characterSkillId": 35,
+      "id": 35
+    },
+    {
+      "characterId": 6,
+      "skillId": 11,
+      "id": 36
+    },
+    {
+      "characterId": 5,
+      "skillId": 15,
+      "characterSkillId": 37,
+      "id": 37
+    },
+    {
+      "characterId": 5,
+      "skillId": 14,
+      "characterSkillId": 37,
+      "id": 38
+    },
+    {
+      "characterId": 4,
+      "skillId": 5,
+      "characterSkillId": 37,
+      "id": 39
+    },
+    {
+      "characterId": 4,
+      "skillId": 6,
+      "characterSkillId": 37,
+      "id": 40
     }
   ],
   "skills": [
@@ -452,11 +493,6 @@
       "id": 10
     },
     {
-      "characterId": 6,
-      "throwId": 6,
-      "id": 11
-    },
-    {
       "characterId": 3,
       "throwId": 3,
       "id": 12
@@ -467,9 +503,37 @@
       "id": 13
     },
     {
+      "characterId": 8,
+      "throwId": 1,
+      "id": 14
+    },
+    {
       "characterId": 7,
       "throwId": 4,
-      "id": 14
+      "characterThrows": "16",
+      "id": 16
+    },
+    {
+      "characterId": 5,
+      "throwId": 2,
+      "id": 17
+    },
+    {
+      "characterId": 5,
+      "throwId": 3,
+      "id": 18
+    },
+    {
+      "characterId": 6,
+      "throwId": 6,
+      "characterThrows": "11",
+      "id": 19
+    },
+    {
+      "characterId": 8,
+      "throwId": 5,
+      "characterThrows": "20",
+      "id": 20
     }
   ],
   "throws": [

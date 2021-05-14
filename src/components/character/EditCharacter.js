@@ -14,10 +14,22 @@ export const EditCharacter = () => {
         const stateToChange = { ...character };
         let editedVal = event.target.value;
 
-        if (event.target.id.includes("name", "race", "class", "alignment")) {
+       
+
+        if (event.target.id.includes("name")) {
+            editedVal = editedVal
+        }
+        else if (event.target.id.includes("race")) {
+            editedVal = editedVal
+        }
+        else if (event.target.id.includes("class")) {
+            editedVal = editedVal
+        }
+        else if (event.target.id.includes("alignment")) {
             editedVal = editedVal
         }
         else {
+           
             editedVal = parseInt(editedVal)
         }
 
@@ -85,7 +97,7 @@ export const EditCharacter = () => {
                 <fieldset>
                     <div className="form-group">
                         <label htmlFor="class">Class:</label>
-                        <input type="" id="class" onChange={handleFieldChange} required autoFocus className="form-control" value={character.class} />
+                        <input type="text" id="class" onChange={handleFieldChange} required autoFocus className="form-control" value={character.class} />
                     </div>
                 </fieldset>
                 <fieldset>

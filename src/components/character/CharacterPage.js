@@ -123,11 +123,7 @@ export const CharacterPage = () => {
                         <p className="subHeaderItem">Proficiency Bonus: +{character.proficiencyBonus}</p>
                         <p className="subHeaderItem">Max Hit Points: {character.hitPoints}</p>
                     </div>
-                    {/* <div className="CharacterStats">
-                        <h3>Hit Points</h3>
-                        <p className="centerStat">{character.hitPoints}</p>
-                        <p>Need to make this one an editable counter</p>
-                    </div> */}
+        
                 </div>
                 <div className="CharacterSheet">
                     <div className="CharacterStats">
