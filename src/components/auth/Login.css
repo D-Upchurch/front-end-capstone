@@ -62,6 +62,11 @@
 	text-shadow:0px 1px 0px #b23e35;
 }
 
+.button-login:hover {
+    background:linear-gradient(to bottom, #D90404 5%, #000000 100%);
+	background-color:#ce0100;
+}
+
 .form-field {
     display: flex;
     flex-direction: row;
