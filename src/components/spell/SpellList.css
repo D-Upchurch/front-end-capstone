@@ -58,7 +58,7 @@
     justify-content: center;
 }
 
-.spellButtons:hover {
+.spellButton:hover {
 	background:linear-gradient(to bottom, #D90404 5%, #000000 100%);
 	background-color:#ce0100;
 }
