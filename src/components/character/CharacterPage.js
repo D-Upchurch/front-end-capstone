@@ -101,7 +101,7 @@ export const CharacterPage = () => {
                     <div className="characterSelection">
                         <label className="selectHeading" hidden={isLoading} htmlFor="character">Select Your Character:</label>
                         <p className="noSelectedCharacter" hidden={!isLoading}>Select a character to view it's stats!</p>
-                        <select id="characterId" name="characters" size="5" onChange={handleControlledInputChange} defaultValue="1">
+                        <select id="characterId" name="characters" size="5" onChange={handleControlledInputChange} >
                             {characterDropdown(userCharacters)}
                         </select>
                     </div>
