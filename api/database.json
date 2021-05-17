@@ -14,6 +14,11 @@
       "email": "bl@capstone.com",
       "name": "Brenda Long",
       "id": 3
+    },
+    {
+      "email": "em@capstone.com",
+      "name": "Emma Hooper",
+      "id": 4
     }
   ],
   "characters": [

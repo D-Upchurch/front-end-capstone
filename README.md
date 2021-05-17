@@ -2,6 +2,7 @@
 
 The Tavern is a Dungeons & Dragons helper app. The main goals were to have a digital representation of the user's characters, to have a way to save spells to a favorite list for easy access, and to include digital dice in case the user forgets to bring theirs to the session.
 
+
 ## Installation
 
 To view my app, you will need a few things installed locally. A quick google search for each should give multiple options for downloading.
@@ -41,11 +42,11 @@ Wireframe: [Link](https://www.figma.com/file/6frG56RbIcJobQkydPALlo/Untitled?nod
 
 ## Technologies Used
 
-Figma
-dbDiagram
-React.js
-Vanilla CSS
-JSON Server
+* Figma
+* dbDiagram
+* React.js
+* Vanilla CSS
+* JSON Server
 
 ## Copyright
 
