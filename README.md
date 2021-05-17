@@ -36,9 +36,9 @@ Once you have the dependencies, clone the repository here [Link](https://github.
 
 ## ERD and Wireframe
 
-ERD: [Link](https://dbdiagram.io/d/608078a0b29a09603d118b9b)
+* ERD: [Link](https://dbdiagram.io/d/608078a0b29a09603d118b9b)
 
-Wireframe: [Link](https://www.figma.com/file/6frG56RbIcJobQkydPALlo/Untitled?node-id=0%3A1)
+* Wireframe: [Link](https://www.figma.com/file/6frG56RbIcJobQkydPALlo/Untitled?node-id=0%3A1)
 
 ## Technologies Used
 
@@ -47,6 +47,7 @@ Wireframe: [Link](https://www.figma.com/file/6frG56RbIcJobQkydPALlo/Untitled?nod
 * React.js
 * Vanilla CSS
 * JSON Server
+* Open5e (Open source API for Dungeons & Dragons)
 
 ## Copyright
 

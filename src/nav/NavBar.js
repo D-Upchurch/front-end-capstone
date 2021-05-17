@@ -14,7 +14,10 @@ export const NavBar = () => {
     return (
 
         <nav className="navbar">
-            <img className="logo" src={logo} alt="logo" />
+            <div className="nav-left">
+                <img className="logo" src={logo} alt="logo" />
+                <h1 className="nav-title">The Tavern</h1>
+            </div>
             <ul className="navList">
                 <li className="nav-item">
                     <NavLink activeClassName="selected" className="nav-link" to="/characters">Characters</NavLink>
