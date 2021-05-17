@@ -12,6 +12,18 @@
   
 }
 
+.nav-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-title {
+    margin-left: 1em;
+    font-size: 3em;
+    margin-top: 0.1em;
+    letter-spacing: 0.05em;
+}
+
 .logo {
     width: 5em;
     height: 5em;
