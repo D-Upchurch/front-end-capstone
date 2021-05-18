@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/D-Upchurch/front-end-capstone.git/static/css/main.ff1f34c2.chunk.css",
+    "main.js": "/D-Upchurch/front-end-capstone.git/static/js/main.a271695f.chunk.js",
+    "main.js.map": "/D-Upchurch/front-end-capstone.git/static/js/main.a271695f.chunk.js.map",
+    "runtime-main.js": "/D-Upchurch/front-end-capstone.git/static/js/runtime-main.806f640d.js",
+    "runtime-main.js.map": "/D-Upchurch/front-end-capstone.git/static/js/runtime-main.806f640d.js.map",
+    "static/js/2.ee01783d.chunk.js": "/D-Upchurch/front-end-capstone.git/static/js/2.ee01783d.chunk.js",
+    "static/js/2.ee01783d.chunk.js.map": "/D-Upchurch/front-end-capstone.git/static/js/2.ee01783d.chunk.js.map",
+    "static/js/3.35fdf8e5.chunk.js": "/D-Upchurch/front-end-capstone.git/static/js/3.35fdf8e5.chunk.js",
+    "static/js/3.35fdf8e5.chunk.js.map": "/D-Upchurch/front-end-capstone.git/static/js/3.35fdf8e5.chunk.js.map",
+    "index.html": "/D-Upchurch/front-end-capstone.git/index.html",
+    "static/css/main.ff1f34c2.chunk.css.map": "/D-Upchurch/front-end-capstone.git/static/css/main.ff1f34c2.chunk.css.map",
+    "static/js/2.ee01783d.chunk.js.LICENSE.txt": "/D-Upchurch/front-end-capstone.git/static/js/2.ee01783d.chunk.js.LICENSE.txt",
+    "static/js/main.a271695f.chunk.js.LICENSE.txt": "/D-Upchurch/front-end-capstone.git/static/js/main.a271695f.chunk.js.LICENSE.txt",
+    "static/media/d20-grey.60e73155.png": "/D-Upchurch/front-end-capstone.git/static/media/d20-grey.60e73155.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.806f640d.js",
+    "static/js/2.ee01783d.chunk.js",
+    "static/css/main.ff1f34c2.chunk.css",
+    "static/js/main.a271695f.chunk.js"
+  ]
+}

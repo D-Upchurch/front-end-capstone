@@ -1,0 +1,5 @@
+//! This function will roll a d4.
+
+//! This function will roll a d6.
+
+//! value = event.target.value
