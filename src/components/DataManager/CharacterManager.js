@@ -1,15 +1,17 @@
-const remoteURL = "http://localhost:8088"
+import { urlHelper } from './UrlHelper'
+
+const remoteURL = urlHelper()
 
 //! This function will get all characters of a given user.
 export const getCharactersByUserId = (userId) => {
     return fetch(`${remoteURL}/characters?userId=${userId}`)
-    .then(response => response.json())
+        .then(response => response.json())
 };
 
 //! This function will get a single character for editing/deleting.
 export const getCharacterById = (characterId) => {
     return fetch(`${remoteURL}/characters/${characterId}`)
-    .then(response => response.json())
+        .then(response => response.json())
 };
 
 //! This function will add a character to the database.
@@ -54,7 +56,7 @@ export const editCharacter = (editedCharacter) => {
 //! This function will delete a character from the database.
 export const deleteCharacter = (characterId) => {
     return fetch(`${remoteURL}/characters/${characterId}`, {
-      method: "DELETE"
+        method: "DELETE"
     }).then(response => response.json())
 };
 
@@ -62,13 +64,13 @@ export const deleteCharacter = (characterId) => {
 //! This function will get all skills.
 export const getSkills = () => {
     return fetch(`${remoteURL}/skills`)
-    .then(response => response.json())
+        .then(response => response.json())
 };
 
 //! This function will get all saving throws.
 export const getThrows = () => {
     return fetch(`${remoteURL}/throws`)
-    .then(response => response.json())
+        .then(response => response.json())
 };
 
 //! This function will join a skill to a character.
@@ -91,43 +93,44 @@ export const addThrow = (newThrow) => {
         },
         body: JSON.stringify(newThrow)
     }).then(response => response.json())
-;}
-   
+        ;
+}
+
 
 //! This function will get a skill by it's name.
 export const getSkillByName = (name) => {
     return fetch(`${remoteURL}/skills?name=${name}`)
-    .then(response => response.json())
+        .then(response => response.json())
 }
 
 //! This function will get a skill by it's id.
 export const getSkillById = (id) => {
     return fetch(`${remoteURL}/skills?id=${id}`)
-    .then(response => response.json())
+        .then(response => response.json())
 }
 
 //! This function will get a saving throw by it's name.
 export const getThrowByName = (name) => {
     return fetch(`${remoteURL}/throws?name=${name}`)
-    .then(response => response.json())
+        .then(response => response.json())
 }
 
 //! This function will get a saving throw by it's id.
 export const getThrowById = (id) => {
     return fetch(`${remoteURL}/throws?id=${id}`)
-    .then(response => response.json())
+        .then(response => response.json())
 }
 
 //! This function will return an array that contains the skills of a given character.
 export const getCharacterSkills = (id) => {
     return fetch(`${remoteURL}/characterSkills?characterId=${id}&_expand=skill`)
-    .then(response => response.json())
+        .then(response => response.json())
 }
 
 //! This function will return an array that contains the saving throws of a given character.
 export const getCharacterThrows = (id) => {
     return fetch(`${remoteURL}/characterThrows?characterId=${id}&_expand=throw`)
-    .then(response => response.json())
+        .then(response => response.json())
 }
 
 //! This function will delete a skill from a character.
