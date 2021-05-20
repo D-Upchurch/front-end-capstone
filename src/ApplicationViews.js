@@ -13,6 +13,7 @@ import { AddSpell } from './components/spell/AddSpell'
 export const ApplicationViews = () => {
     return (
         <>
+
             <Route exact path="/characters">
                 <CharacterPage />
             </Route>
@@ -37,6 +38,7 @@ export const ApplicationViews = () => {
             <Route path="/dice">
                 <DiceRoller />
             </Route>
+
         </>
     )
 }
